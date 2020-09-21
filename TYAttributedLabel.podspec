@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 名称 使用的时候pod search [name]
 s.name = "TYAttributedLabel"
 # 代码库的版本
-s.version = "2.6.6"
+s.version = "2.6.7"
 # 简介
 s.summary = "Easy, powerful attributedLabel，support mixed with image and text, link text,image, and UIView."
 # 主页
@@ -18,6 +18,8 @@ s.platform = :ios, "6.0"
 s.source = { :git => "https://github.com/12207480/TYAttributedLabel.git", :tag => s.version.to_s }
 # 如果使用pod 需要导入哪些资源
 s.source_files = "TYAttributedLabelDemo/TYAttributedLabel/**/*.{h,m}"
+
+s.compiler_flags = "-Xclang -fcompatibility-qualified-id-block-type-checking"
 # s.resources = "**/*/*.bundle"
 # 框架是否使用的ARC
 s.requires_arc = true
